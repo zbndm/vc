@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-custom",
+  "main": "index.js",
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint",
+    "format": "format"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-turbo": "^0.0.4",
+    "eslint-plugin-astro": "^0.21.1",
+    "format": "*",
+    "tsconfig": "*",
+    "typescript": "^4.9.5"
+  }
+}

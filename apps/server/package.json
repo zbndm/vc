@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "yarn@1.22.19",
+  "engines": {
+    "node": ">=16.x"
+  },
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "astro": "astro",
+    "lint": "eslint",
+    "format": "format",
+    "test": "vitest",
+    "coverage": "vitest --coverage",
+    "playwright": "npx playwright test"
+  },
+  "dependencies": {
+    "@astrojs/image": "^0.13.1",
+    "@astrojs/preact": "^2.0.3",
+    "@astrojs/sitemap": "^1.1.0",
+    "@astrojs/vercel": "^3.1.3",
+    "@vercel/node": "^2.9.7",
+    "astro": "^2.0.15",
+    "astro-robots-txt": "^0.3.12",
+    "astro-sitemap": "^0.4.3",
+    "astro-webmanifest": "^0.4.4",
+    "astrojs-service-worker": "^0.0.9",
+    "preact": "^10.12.1",
+    "vercel": "^28.16.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.31.1",
+    "@vitest/coverage-c8": "^0.28.5",
+    "eslint-config-custom": "*",
+    "format": "*",
+    "playwright": "^1.31.1",
+    "tsconfig": "*",
+    "vitest": "^0.28.5"
+  }
+}
