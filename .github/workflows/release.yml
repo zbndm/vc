@@ -1,7 +1,7 @@
 name: Vercel Production Deployment
 env:
-  VERCEL_ORG_ID: k6
-  VERCEL_PROJECT_ID: tIR08E82E5HgfUYboGC2pQ2E
+  VERCEL_ORG_ID: tIR08E82E5HgfUYboGC2pQ2E
+  VERCEL_PROJECT_ID: k6
 #  VERCEL_TOKEN: b0i6rn5v9g67ufrTUhcO31DT
 on:
   push:
