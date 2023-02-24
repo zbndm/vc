@@ -2,6 +2,8 @@ name: Vercel Production Deployment
 env:
   VERCEL_ORG_ID: tIR08E82E5HgfUYboGC2pQ2E
   VERCEL_PROJECT_ID: k6
+  TURBO_TEAM: k6
+  TURBO_TOKEN: orXUG7C0upy1PfeztANQZEBp
 #  VERCEL_TOKEN: b0i6rn5v9g67ufrTUhcO31DT
 on:
   push:
@@ -12,11 +14,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+
+      - uses: actions/setup-node@v3
       - name: Install Vercel CLI
-        run: npm install && npm install --global vercel@latest
+        run: npm install && npm run build && npm install --global vercel@latest
       - name: Pull Vercel Environment Information
         run: vercel pull --yes --environment=production --token=b0i6rn5v9g67ufrTUhcO31DT
       - name: Build Project Artifacts
         run: vercel build --prod --token=b0i6rn5v9g67ufrTUhcO31DT
       - name: Deploy Project Artifacts to Vercel
         run: vercel deploy --prebuilt --prod --token=b0i6rn5v9g67ufrTUhcO31DT
+
+
