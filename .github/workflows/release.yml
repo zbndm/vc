@@ -17,9 +17,9 @@ jobs:
 
       - uses: actions/setup-node@v3
       - name: Install Vercel CLI
-        run: npm install && npm run build && npm install --global vercel@latest
+        run: yarn install
       - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=b0i6rn5v9g67ufrTUhcO31DT
+        run: npm install --global vercel@latest && vercel pull --yes --environment=production --token=b0i6rn5v9g67ufrTUhcO31DT
       - name: Build Project Artifacts
         run: vercel build --prod --token=b0i6rn5v9g67ufrTUhcO31DT
       - name: Deploy Project Artifacts to Vercel

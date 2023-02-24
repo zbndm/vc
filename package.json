@@ -8,6 +8,7 @@
     "build": "NODE_ENV=production dotenv yarn turbo run build --concurrency=1",
     "preview": "NODE_ENV=production dotenv yarn turbo run preview",
     "dev": "NODE_ENV=development dotenv yarn turbo run dev",
+    "prepare": "yarn build",
     "test": "dotenv yarn turbo run test",
     "coverage": "dotenv yarn turbo run coverage",
     "playwright": "dotenv yarn turbo run playwright",
