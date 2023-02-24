@@ -25,5 +25,8 @@
     "prettier-plugin-astro": "^0.8.0",
     "sharp": "^0.31.3",
     "turbo": "^1.8.2"
+  },
+  "dependencies": {
+    "next": "^13.2.1"
   }
 }
